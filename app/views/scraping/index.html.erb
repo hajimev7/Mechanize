@@ -1,0 +1,6 @@
+<div>
+  <% @scrapings.each do |scraping| %>
+    <p><img src="https://xxxxxxx/<%= scraping.image_url %>"></p>
+    <p><%= link_to scraping.title, scraping_path(scraping) %></p>
+  <% end %>
+</div>

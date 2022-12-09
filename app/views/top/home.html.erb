@@ -1,0 +1,6 @@
+<%@elements.each do|element|%>
+  <p><%= element.inner_text%></p>
+  <div>
+    <img src="<%= element.attribute('src').value %>">
+  </div>
+<%end%>
